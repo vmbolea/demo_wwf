@@ -57,7 +57,7 @@ El mapa original del informe se georreferenció utilizando **QGIS** con la herra
 
 ### 2. Extracción automática de puntos
 
-Se desarrolló un script en Python (`extract_impactos_georef.py`) que procesa la imagen georreferenciada para extraer automáticamente los puntos según su simbología:
+Se desarrolló un script en Python (`scripts/extract_impactos_georef.py`) que procesa la imagen georreferenciada para extraer automáticamente los puntos según su simbología:
 
 **Lógica de extracción:**
 - Reconoce colores (rojo, marrón, azul, verde, negro, amarillo/naranja, morado)
@@ -128,7 +128,7 @@ demo_wwf/
 ├── scripts/
 │   └── extract_impactos_georef.py  # Script de extracción
 ├── images/
-│   └── screenshot.png    # Vista previa
+│   └── donana_georef.tif    # GeoTif del informe georeferenciado (QGIS)
        
 ```
 
