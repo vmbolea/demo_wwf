@@ -8,7 +8,7 @@ Visualización interactiva de los impactos ambientales en el entorno de Doñana 
 
 🔗 **Demo en vivo:** [https://vmbolea.github.io/demo_wwf](https://vmbolea.github.io/demo_wwf)
 
-![Vista previa del mapa](screenshot.png)
+![Vista previa del mapa](https://wwfes.awsassets.panda.org/img/original/mapa_impactos_donana.jpg)
 
 ## 📋 Tabla de contenidos
 
