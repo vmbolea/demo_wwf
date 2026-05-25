@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mapa de Impactos Ambientales - Doñana</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+  <!-- MarkerCluster -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<button class="sidebar-toggle" id="sidebarToggle">☰</button>
+<div id="sidebar">
+    <div style="display: flex; align-items: center; gap: 0px; margin-bottom: 5px;">
+        <div style="background: white; border-radius: 10px; padding: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.2); display: inline-flex;">
+            <img src="icons/wwf.svg" alt="WWF" style="width: 30px; height: 30px; display: block;">
+        </div>
+        <h2 style="margin: 0; color: white;">Impactos Ambientales</h2>
+    </div>
+    <h3 style="color: #ccc;">Doñana</h3>
+
+    <div class="filter-group">
+      <label>Categoría</label>
+      <select id="categoriaFilter">
+        <option value="all">Todas</option>
+      </select>
+    </div>
+
+    <button id="filtrarBtn">Aplicar filtro</button>
+    <button id="resetBtn">Reset</button>
+
+    <hr />
+
+    <!-- Leyenda de Espacios Protegidos WFS -->
+    <div id="legendWFS">
+      <h3>🗺️ Espacios Protegidos</h3>
+      <div class="legend-item">
+        <div style="width:24px; height:3px; background:#f97316; margin-right:8px;"></div>
+        <span>Parque Nacional de Doñana</span>
+      </div>
+      <div class="legend-item">
+        <div style="width:24px; height:3px; background:#6b7280; margin-right:8px;"></div>
+        <span>Parque Natural de Doñana</span>
+      </div>
+      <div class="legend-item">
+        <div style="width:24px; height:3px; background:#166534; margin-right:8px;"></div>
+        <span>Corredor Verde del Guadiamar</span>
+      </div>
+    </div>
+
+    <hr />
+
+    <!-- Leyenda de Impactos -->
+    <div id="legendImpactos">
+      <h3>⚠️ Impactos Ambientales</h3>
+    </div>
+
+      <!-- Fuentes y Autor -->
+    <div style="font-size: 0.75rem; color: #ccc; margin-top: 20px; border-top: 1px solid #444; padding-top: 12px;">
+      <p style="margin: 5px 0;">
+        📊 <strong>Fuente de datos:</strong> 
+        <a href="https://www.wwf.es/?55100/Analisis-de-los-problemas-ambientales-de-Donana-y-el-Estuario-del-Gudalquivir" 
+           target="_blank" 
+           style="color: #66ccff; text-decoration: none;">
+          Informe WWF
+        </a>
+      </p>
+      <p style="margin: 5px 0;">
+        ✏️ <strong>Autor:</strong> 
+        <a href="https://github.com/vmbolea/demo_wwf" 
+           target="_blank" 
+           style="color: #66ccff; text-decoration: none;">
+          Víctor Martínez Bolea
+        </a>
+      </p>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <!-- Leaflet -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- MarkerCluster -->
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
