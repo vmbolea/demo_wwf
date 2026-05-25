@@ -8,8 +8,6 @@ Visualización interactiva de los impactos ambientales en el entorno de Doñana 
 
 🔗 **Demo en vivo:** [https://vmbolea.github.io/demo_wwf](https://vmbolea.github.io/demo_wwf)
 
-![Vista previa del mapa](https://wwfes.awsassets.panda.org/img/original/mapa_impactos_donana.jpg)
-
 ## 📋 Tabla de contenidos
 
 - [Descripción](#descripción)
@@ -39,6 +37,12 @@ Este proyecto visualiza los impactos ambientales identificados en el informe de 
 **Informe original:** [Análisis de los problemas ambientales de Doñana y el Estuario del Guadalquivir](https://www.wwf.es/?55100/Analisis-de-los-problemas-ambientales-de-Donana-y-el-Estuario-del-Gudalquivir)
 
 El informe de WWF incluye un mapa síntesis con la localización de los principales impactos ambientales, representados mediante diferentes colores y formas geométricas según su categoría.
+
+**Mapa original del informe de WWF:**
+
+<p align="center">
+  <img src="https://wwfes.awsassets.panda.org/img/original/mapa_impactos_donana.jpg" alt="Mapa de impactos ambientales en Doñana" width="550"/>
+</p>
 
 ## 🛠️ Metodología
 
